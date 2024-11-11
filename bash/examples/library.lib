@@ -1,0 +1,28 @@
+# Library file holding common functions and setting
+# Functions
+non_zero_input()
+{
+  if (( $1 == 0 ))
+    then
+  echo "Please, give at least one option on the command line"
+  exit 1
+  fi
+}
+
+color_print()
+{
+  printf "$1$2${CReset}n"
+}
+# Colors - foreground
+#--------------------
+Black='33[0;30m'
+Red='33[0;31m'
+Green='33[0;32m'
+Yellow='33[0;33m'
+Blue='33[0;34m'
+Purple='33[0;35m'
+Cyan='33[0;36m'
+White='33[0;37m'
+# Colors - Reset
+#---------------
+CReset='33[0m'

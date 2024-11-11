@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Input your age: "
+read user_input
+echo "Your input: ${user_input:+ah ty pidor}"
