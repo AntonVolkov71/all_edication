@@ -501,4 +501,3 @@ SELECT *
 FROM orders
 WHERE client_id IN (SELECT client_id FROM orders );
 ```
-
